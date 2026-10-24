@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+                url('/aiub.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+ 
+.container {
+    width: 900px;
+    max-width: 100%;
+    margin: 20px auto;
+    background: rgba(10, 20, 15, 0.85);
+    border: 1px solid rgba(158, 44, 21, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    border-spacing: 0;
+    box-shadow: 0 15px 35px rgba(26, 8, 8, 0.5);
+}
+
+
+
+.left-banner {
+    width: 45%;
+    padding: 40px;
+    color: rgb(245, 233, 233);
+    vertical-align: middle;
+}
+
+.left-banner h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.left-banner p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.left-banner a {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left-banner a:hover {
+    text-decoration: underline;
+}
+
+.right-form {
+    width: 55%;
+    padding: 30px;
+    background: rgba(5, 12, 8, 0.85);
+    color: white;
+    vertical-align: top;
+}
+
+.right-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.form-group {
+    padding-bottom: 15px;
+}
+
+.form-group > label {
+    display: block;
+    font-size: 0.85rem;
+    color: #cccccc;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 9px 0;
+    color: rgb(251, 248, 248);
+    font-size: 0.95rem;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaaaaa;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-bottom-color: #00b074;
+}
+
+select option {
+    background: #111a14;
+    color: white;
+}
+
+.inline-table {
+    border-spacing: 0;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.inline-table td {
+    padding: 5px 15px 5px 0;
+}
+
+.inline-table input {
+    width: auto;
+    margin-right: 4px;
+}
+
+.inline-table label {
+    cursor: pointer;
+}
+
+input[type="file"] {
+    width: 100%;
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background: #00b074;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button[type="submit"]:hover {
+    background: #00915f;
+}
+
+.footer-text {
+    padding-top: 20px;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #aaaaaa;
+}
+
+.footer-text a {
+    color: #00b074;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+    .container,
+    .container tr,
+    .container td {
+        display: block;
+        width: 100%;
+    }
+
+    .left-banner,
+    .right-form {
+        padding: 25px;
+    }
+}
